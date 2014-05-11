@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- No point on reading all of this code unless you want to learn bootstrap because of #php -->
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+        <title>News Service</title>
+        <meta name="robots" content="noindex, nofollow"
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style type="">
+        div.row {background:#e5e5e5;border:2px solid #e5e5e5;margin:0 0 5px 0;float:left;width:100%;padding:6px 0;}
+        div.row label {float:left;display:block;width:10em;font-weight:bold;padding:0 1px;}
+        div.row label:hover {background:#FFFF66;cursor:pointer;}
+        div.row fieldset {border:1px solid gray;margin:0 6px;}
+        div.row fieldset span {display:block;}
+        div.row fieldset span label {float:none;display:inline;}
+        div.row fieldset legend {font-weight:bold;}
+        </style>        
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->        
+    </head>    
+    <body>
+        
+        <div class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">News Service</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>        
+      </ul>             
+      
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+
+<div class="container">
+  
+  <div class="text-center">
+
+    <form action="submit.php" method="post">
+      <div class="row">
+        <label for="txt_Title" id="Title-ariaLabel">Title</label>
+        <input id="txt_Title" name="txt_Title" type="text" aria-labelledby="Title-ariaLabel">
+      </div>
+      <div class="row">
+        <label for="txtarea_Content" id="Content-ariaLabel">Content</label>
+        <textarea id="txtarea_Content" name="txtarea_Content" cols="20" rows="10" aria-labelledby="Content-ariaLabel"></textarea>
+      </div>
+      <div class="row">
+        <label for="pwd_Password" id="Password-ariaLabel">Password</label>
+        <input id="pwd_Password" name="pwd_Password" type="password" aria-labelledby="Password-ariaLabel">
+      </div>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>  
+</div><!-- /.container -->
+<div id="footer">
+    <div class="container">
+      <p class="text-muted">Powered by News Provider which is made by <a href="http://www.finleysmith.tk">Finley Smith</a>. View code on <a href="https://www.github.com/epicfinley/online-news-provider">GitHub</a></p>
+</div>
+        
+<script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type='text/javascript' src="//netdna.bootstrapcdn.com/bootstrap/3.1.3/js/bootstrap.min.js"></script>      
+</body>
+</html>
