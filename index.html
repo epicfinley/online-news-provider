@@ -7,6 +7,7 @@
         <meta name="robots" content="noindex, nofollow"
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/css.css" rel="stylesheet">
         <style type="">
         div.row {background:#e5e5e5;border:2px solid #e5e5e5;margin:0 0 5px 0;float:left;width:100%;padding:6px 0;}
         div.row label {float:left;display:block;width:10em;font-weight:bold;padding:0 1px;}
@@ -43,26 +44,58 @@
 
 <div class="container">
   
-  <div class="text-center">
+  
 
-    <form action="submit.php" method="post">
-      <div class="row">
-        <label for="txt_Title" id="Title-ariaLabel">Title</label>
-        <input id="txt_Title" name="txt_Title" type="text" aria-labelledby="Title-ariaLabel">
-      </div>
-      <div class="row">
-        <label for="txtarea_Content" id="Content-ariaLabel">Content</label>
-        <textarea id="txtarea_Content" name="txtarea_Content" cols="20" rows="10" aria-labelledby="Content-ariaLabel"></textarea>
-      </div>
-      <div class="row">
-        <label for="pwd_Password" id="Password-ariaLabel">Password</label>
-        <input id="pwd_Password" name="pwd_Password" type="password" aria-labelledby="Password-ariaLabel">
-      </div>
-      <div class="row">
-        <input type="submit" value="Submit">
-      </div>
-    </form>
-  </div>  
+<form class="form-horizontal" action="submit.php" method="post" id="form">
+<fieldset>
+
+<!-- Form Name -->
+<legend>New News</legend>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="txt_Title">Title</label>
+  <div class="controls">
+    <input id="txt_Title" name="txt_Title" type="text" placeholder="Title" class="input-xlarge">
+    
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="control-group">
+  <label class="control-label" for="txtarea_Content">Content</label>
+  <div class="controls">                     
+    <textarea id="txtarea_Content" name="txtarea_Content" rows="7" cols="40">Put all of the content here!</textarea>
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="control-group">
+  <label class="control-label" for="pwd_Password">Password</label>
+  <div class="controls">
+    <input id="pwd_Password" name="pwd_Password" type="password" placeholder="Password" class="input-xlarge">
+    
+  </div>
+</div>
+
+<!-- Button -->
+<div class="control-group">
+  <br>  
+  <div class="controls">
+       <input class="btn btn-primary" type="submit" name="submit" value="Submit" />
+  </div>
+</div>
+
+</fieldset>
+</form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    
 </div><!-- /.container -->
 <div id="footer">
     <div class="container">
